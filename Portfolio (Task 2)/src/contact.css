@@ -1,0 +1,96 @@
+/* Contact Section CSS */
+
+#contact {
+  color: var(--secondary-color);
+  font-family: "Ubuntu", sans-serif;
+}
+.contact h1::after {
+  content: "get in touch";
+}
+
+.contact .contact-content .col {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .right form .field {
+  display: inline-block;
+  border: 1px solid #1d1e23;
+  border-radius: 6px;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: var(--secondary-color);
+  width: calc(100%-40px);
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  color: crimson;
+}
+.contact .contact-content .right form {
+  display: grid;
+}
+
+.contact .contact-content .right form #yrName {
+  grid-column: 1/12;
+}
+.contact .contact-content .right form #yrEmail {
+  grid-column: 19/30;
+}
+.contact .contact-content .right form #yrSubject {
+  grid-column: 1/30;
+}
+
+.contact .contact-content .right form .textarea {
+  width: 100%;
+  grid-column: 1/30;
+  resize: none;
+}
+
+.contact .contact-content .left .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .left .row i {
+  color: crimson;
+  font-size: 1.6em;
+}
+.contact .contact-content .left .row .info {
+  margin-left: 2.78vw;
+}
+.contact .contact-content .left .row .info p {
+  text-align: justify;
+}
+
+.contact .contact-content .left .row .info .head {
+  font-weight: 600;
+}
+.contact .contact-content .right h2 {
+  margin-bottom: 2vh;
+}
+
+#sendBtn {
+  background: transparent;
+  color: crimson;
+  display: block;
+  width: 100px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  border: 2px solid #1d1e23;
+  transition: all 0.3s ease;
+}
+
+#sendBtn:hover {
+  background-color: crimson;
+  color: #1d1e23;
+}

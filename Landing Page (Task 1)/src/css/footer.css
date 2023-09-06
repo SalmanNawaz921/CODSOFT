@@ -1,0 +1,95 @@
+.footer .full-width .footer-content .footer-item .logo {
+  font-size: 3em;
+}
+
+.footer {
+  padding: 0;
+}
+.footer-item-content .social-icons {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.footer-item-content .social-icons li {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.footer .full-width .footer-content {
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+.footer .full-width .footer-content .footer-item:nth-child(4) {
+  margin-right: 0px;
+}
+
+.footer .full-width {
+  background: url("../assets/image/footer-illustration.png") no-repeat center;
+  position: relative;
+  padding-block: 120px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.footer-item {
+  width: 24%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer .full-width .footer-content .footer-item .footer-item-content h3,
+.footer .full-width .footer-content .footer-item .footer-item-content h4 {
+  margin-bottom: 2vh;
+}
+
+.footer .full-width .footer-content .footer-item .footer-item-content h4 {
+  text-align: justify;
+}
+.footer-item-content input,
+.footer-item-content select {
+  width: 49%;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: none;
+  color: #ff9d2e;
+}
+
+textarea {
+  padding: 10px 10px;
+  width: 99%;
+  background-color: #fff;
+  border: none;
+}
+footer {
+  padding: 30px 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.footer
+  .full-width
+  .footer-content
+  .footer-item
+  .footer-item-content
+  .social-icons {
+  margin-left: -38px;
+}
+
+.footer
+  .full-width
+  .footer-content
+  .footer-item
+  .footer-item-content
+  .social-icons
+  li
+  i {
+  font-size: 30px;
+}
+
+.footer .full-width .footer-content .footer-item .footer-item-content .text-1 {
+  text-align: justify;
+}

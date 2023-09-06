@@ -1,0 +1,81 @@
+/* Navbar Styling CSS */
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 50px;
+}
+.navbar .menu li {
+  color: var(--secondary-color);
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .min-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: crimson;
+}
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+.navbar.sticky {
+  padding: 15px 0;
+  background-color: crimson;
+}
+/* .logo {
+  font-size: 2.5em;
+  font-weight: 800;
+} */
+.logo a {
+  color: var(--secondary-color);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.menu-btn {
+  color: var(--secondary-color);
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .min-container .menu i {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.navbar.sticky .menu i:hover,
+.navbar .logo a:hover {
+  color: var(--secondary-color);
+}
+.navbar .menu i:hover,
+.navbar .logo a:hover {
+  color: crimson;
+}

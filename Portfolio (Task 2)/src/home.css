@@ -1,0 +1,78 @@
+/* Home Section CSS */
+
+#home {
+  display: flex;
+  height: 80vh;
+  width: 90vw;
+  color: var(--secondary-color);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-1 {
+  font-size: 2em;
+}
+.text-2 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+#home img {
+  margin-top: 5vh;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.resumeBtn {
+  margin-top: 2vh;
+  padding: 10px 10px;
+  font-size: 1em;
+  outline: 2px solid crimson;
+  background: none;
+  color: crimson;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resumeBtn:hover {
+  background-color: crimson;
+  color: var(--secondary-color);
+}
+.home-content .social-icons {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.home-content .social-icons li {
+  width: 12%;
+  margin: 0;
+  padding: 0;
+}
+
+.home-content .social-icons li a {
+  color: var(--secondary-color);
+  transition: all 0.2s ease;
+}
+.home-content .social-icons li i:hover {
+  transform: scale(1.2);
+}
+.home-content .social-icons li .fb:hover,
+.home-content .social-icons li .lin:hover {
+  color: #4867aa;
+}
+.home-content .social-icons li .ins:hover {
+  color: pink;
+}
+.home-content .social-icons li .twi:hover,
+.home-content .social-icons li .git:hover {
+  color: rgb(68, 58, 58);
+}

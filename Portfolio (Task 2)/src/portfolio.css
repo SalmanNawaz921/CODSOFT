@@ -1,0 +1,38 @@
+/* Portolfio Section CSS */
+
+.portfolio h1::after {
+  content: "what i created";
+}
+
+.portfolio-box {
+  width: calc(33% - 20px);
+  text-align: left;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 30px 25px;
+  border: 2px solid crimson;
+  margin-bottom: 20px;
+}
+
+.portfolio-box .box .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.portfolio-box .box .buttons button {
+  padding: 20px;
+  border: 2px solid crimson;
+  background: none;
+  cursor: pointer;
+}
+
+.portfolio-box .box .buttons button:hover {
+  background-color: crimson;
+}
+
+.portfolio-box .box .buttons button a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: "Poppins";
+}

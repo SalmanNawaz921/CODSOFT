@@ -1,0 +1,145 @@
+/* General Styling */
+
+@import "src/nav.css";
+@import "src/home.css";
+@import "src/about.css";
+@import "src/services.css";
+@import "src/skills.css";
+@import "src/contact.css";
+@import "src/media.css";
+@import "src/footer.css";
+@import "src/portfolio.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  z-index: -1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: crimson;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.about,
+.services,
+.skills,
+.contact,
+.portfolio,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--primary-color);
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.h1 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.typing {
+  color: crimson;
+  position: relative;
+}
+
+.typing::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: crimson;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+.typing.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+section {
+  padding: 100px 0;
+  color: var(--secondary-color);
+}
+.min-container {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.about .about-content,
+.services .service-content,
+.skills .skill-content,
+.contact .contact-content,
+.portfolio .portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section h1::after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  white-space: nowrap;
+  font-size: 20px;
+  color: crimson;
+  background-color: var(--primary-color);
+  padding: 0 5px;
+  transform: translateX(-50%);
+}
+section h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: crimson;
+  transform: translateX(-50%);
+}
+
+section h1 {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --primary-color: #111111;
+  --secondary-color: #fff;
+}
+
+.dark-mode {
+  --primary-color: #fff;
+  --secondary-color: #111111;
+}

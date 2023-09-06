@@ -1,0 +1,56 @@
+nav .full-width {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+nav {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+nav.sticky {
+  background-color: white;
+  padding: 15px 0;
+}
+.menu-btn {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav .nav-menu li a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+nav .nav-menu li a:hover,
+nav.sticky .nav-menu li a:hover {
+  color: #ff9d2e;
+}
+
+nav.sticky .nav-menu li a,
+nav.sticky .full-width .logo {
+  color: #0d1216;
+}
+
+nav .full-width .logo {
+  font-size: 3em;
+  color: white;
+  font-size: 800;
+}
+
+.logo-txt {
+  color: #ff9d2e;
+}

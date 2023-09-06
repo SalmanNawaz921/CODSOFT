@@ -1,0 +1,46 @@
+/* Services Section CSS */
+
+.services h1::after {
+  content: "what i provide";
+}
+
+.service-box {
+  width: calc(33% - 20px);
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 50px 25px;
+}
+
+.service-box i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+.service-box {
+  border: 2px solid crimson;
+}
+
+.dark-mode .service-box {
+  border: 2px solid crimson;
+  background-color: rgb(255, 255, 255);
+}
+
+.services .service-content .service-box h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.service-box:hover {
+  background-color: crimson;
+}
+.service-box:hover i {
+  color: var(--secondary-color);
+}
+
+.service-box {
+  color: var(--secondary-color);
+}

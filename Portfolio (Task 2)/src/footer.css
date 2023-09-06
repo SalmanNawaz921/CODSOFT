@@ -1,0 +1,13 @@
+/* Footer Section CSS */
+
+footer {
+  text-align: center;
+  color: #fff;
+  background: #1d1e23;
+  padding: 15px 23px;
+}
+
+footer .name {
+  color: crimson;
+  font-weight: 600;
+}
